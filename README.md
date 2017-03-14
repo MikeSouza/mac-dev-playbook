@@ -33,12 +33,12 @@ You can override any of the defaults configured in `default.config.yml` by creat
       - cowsay
       - git
       - go
-    
-    mas_installed_app_ids:
-      - 443987910 # 1Password
-      - 498486288 # Quick Resizer
-      - 557168941 # Tweetbot
-      - 497799835 # Xcode
+
+    mas_installed_apps:
+      - { id: 443987910, name: "1Password" }
+      - { id: 498486288, name: "Quick Resizer" }
+      - { id: 557168941, name: "Tweetbot" }
+      - { id: 497799835, name: "Xcode" }
 
 Any variable can be overridden in `config.yml`; see the supporting roles' documentation for a complete list of available variables.
 
@@ -52,24 +52,18 @@ Applications (installed with Homebrew Cask):
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [Google Chrome](https://www.google.com/chrome/)
   - [Handbrake](https://handbrake.fr/)
-  - [HipChat](https://www.hipchat.com/)
   - [Homebrew](http://brew.sh/)
-  - [Java](https://java.com)
-  - [KDiff3](http://kdiff3.sourceforge.net/)
   - [LICEcap](http://www.cockos.com/licecap/)
   - [LimeChat](http://limechat.net/mac/)
   - [MacVim](http://macvim-dev.github.io/macvim/)
-  - [Menu Meters](https://www.ragingmenace.com/software/menumeters/) (Note: Currently using [this fork](http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/) for compatibility)
   - [nvALT](http://brettterpstra.com/projects/nvalt/)
   - [Sequel Pro](https://www.sequelpro.com/) (MySQL client)
-  - [Skype](https://www.skype.com/en/)
   - [Skitch](https://evernote.com/skitch/)
   - [Slack](https://slack.com/)
   - [Sublime Text](https://www.sublimetext.com/)
   - [Transmit](https://panic.com/transmit/) (S/FTP client)
   - [Vagrant](https://www.vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-  - [VLC](http://www.videolan.org/vlc/index.html)
 
 Packages (installed with Homebrew):
 
@@ -84,25 +78,16 @@ Packages (installed with Homebrew):
   - hub
   - httpie
   - iperf
-  - libdvdcss
   - libevent
-  - packer
-  - python
   - sqlite
   - mcrypt
-  - mysql
   - npm
   - nvm
-  - php70
-  - php70-mcrypt
-  - php70-xdebug
   - ssh-copy-id
   - cowsay
   - readline
-  - subversion
   - openssl
   - pv
-  - drush
   - wget
   - wrk
 

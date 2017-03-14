@@ -2,7 +2,7 @@
 downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
-configure_prefs: yes
+configure_terminal: yes
 configure_osx: yes
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
@@ -23,32 +23,24 @@ homebrew_installed_packages:
   - chromedriver
   - doxygen
   - gettext
+  - gifsicle
   - git
   - go
   - gpg
   - hub
   - httpie
   - iperf
-  - libdvdcss
   - libevent
-  - packer
-  - python
   - sqlite
   - mcrypt
-  - mysql
   - nmap
   - npm
   - nvm
-  - php70
-  - php70-mcrypt
-  - php70-xdebug
   - ssh-copy-id
   - cowsay
   - readline
-  - subversion
   - openssl
   - pv
-  - drush
   - wget
   - wrk
 
@@ -64,30 +56,23 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - docker
   - dropbox
-  - fing
+  # - fing # Download link keeps getting changed, d'oh!
   - firefox
   - google-chrome
   - handbrake
-  - hipchat
-  - java
-  - kdiff3
   - licecap
   - limechat
   - macvim
-  # - menumeters
-  # - yujitach-menumeters # Forked version for 10.11+ support.
   - nvalt
   - sequel-pro
-  - skype
   - skitch
   - slack
   - sublime-text
   - transmit
   - vagrant
   - virtualbox
-  - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_app_ids: []
+mas_installed_apps: []
 mas_email: ""
 mas_password: ""
